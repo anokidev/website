@@ -1,0 +1,50 @@
+{
+  "name":    "@website/web",
+  "version": "0.0.0",
+  "license": "MIT",
+
+  "description": "Sveltekit source code.",
+
+  "scripts": {
+    "exec:build": "vite build",
+    "exec:dev": "vite dev --port 3000 --open",
+    "exec:prod": "vite preview",
+
+    "repair:format": "prettier --write --ignore-path=../../.prettierignore .",
+    "repair:lint": "prettier --check --ignore-path=../../.prettierignore . && eslint \"src\"",
+
+    "check:standard": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+
+    "test:e2e": "",
+    "test:unit": ""
+  },
+
+  "dependencies": {
+    "@website/ui": "*",
+
+    "svelte-fa": "^3.0.3",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0"
+  },
+
+  "devDependencies": {
+    "@website/eslint-config-custom": "*",
+
+    "svelte": "^3.44.0",
+    "svelte-check": "^2.7.1",
+    "svelte-preprocess": "^4.10.6",
+    "@sveltejs/adapter-auto": "latest",
+    "@sveltejs/kit": "latest",
+    
+    "typescript": "^4.7.2",
+    "tslib": "^2.3.1",
+
+    "postcss": "latest",
+    "tailwindcss": "latest",
+
+    "vite": "^4.0.0"
+  },
+  
+  "type": "module"
+}

@@ -1,0 +1,40 @@
+{
+  "name"   :     "website",
+  "version":     "1.0.0a1",
+  "license":     "MIT",
+  "private":     true,
+
+  "description": "Repository for my website.",
+
+  "scripts": {
+    "exec:build"   : "turbo run exec:build",
+    "exec:prod"    : "turbo run exec:prod",
+    "exec:dev"     : "turbo run exec:dev",
+
+    "repair:format": "turbo run repair:format",
+    "repair:lint"  : "turbo run repair:lint",
+
+    "test:e2e"     : "turbo run test:e2e",
+    "test:unit"    : "turbo run test:unit"
+  },
+
+  "devDependencies": {
+    "eslint-config-custom": "*",
+
+    "eslint": "^8.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+
+    "playwright": "latest",
+    "vitest": "latest",
+
+    "turbo": "latest"
+  },
+
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+
+  "packageManager": "npm@9.6.5"
+}
