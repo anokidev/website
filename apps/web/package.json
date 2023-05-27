@@ -6,7 +6,7 @@
   "description": "Sveltekit source code.",
 
   "scripts": {
-    "exec:build": "vite build",
+    "exec:build": "svelte-kit sync && vite build",
     "exec:dev": "vite dev --port 3000 --open",
     "exec:prod": "vite preview",
 

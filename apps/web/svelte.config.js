@@ -9,15 +9,7 @@ const config = {
   preprocess: preprocess(),
 
   kit: {
-    adapter: adapter(),
-    target: '#svelte',
-      vite: {
-        resolve: {
-          alias: {
-            $components: resolve('./src/libs/')
-          }
-      }
-    }
+    adapter: adapter()
   }
 
 };

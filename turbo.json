@@ -3,8 +3,7 @@
 
   "pipeline": {
     "exec:build": {
-      "dependsOn": ["^build"],
-      "outputs": [".svelte-kit/**", ".vercel/**"]
+      "outputs": [".svelte-kit/**"]
     },
 
     "exec:prod": {

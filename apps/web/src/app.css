@@ -1,0 +1,15 @@
+/*
+
+  @website/web/src/app.css
+
+  This is the web's main CSS file.
+
+  Copyright (C) 2023, Anokidev. All right reserved.
+  This webiste is open source and is Licensed in MIT License.
+
+*/
+
+// Directives for Tailwind.
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
