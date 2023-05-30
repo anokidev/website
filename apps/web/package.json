@@ -42,6 +42,7 @@
 
     "postcss": "latest",
     "tailwindcss": "latest",
+    "autoprefixer": "latest",
 
     "vite": "^4.0.0"
   },

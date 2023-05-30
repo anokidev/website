@@ -11,8 +11,12 @@
 
 <script lang="ts">
 
+  // Standard components.
   import Header from "@website/ui/Header.svelte";
   import Footer from "@website/ui/Footer.svelte";
+
+  // Tailwind!
+  import "../app.css";
 
 </script>
 
